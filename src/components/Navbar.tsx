@@ -39,7 +39,7 @@ const Navbar = () => {
             <Image
               src="/logo.png"
               alt="logo"
-              width={120}
+              width={130}
               height={40}
               className="object-cover"
             />
@@ -55,20 +55,7 @@ const Navbar = () => {
                   onClick={() => handleMenuClick(item.href.replace("#", ""))}
                   key={item.href}
                   href={item.href}
-                  className={`relative pb-1 transition-all
-    text-gray-700
-    after:content-['']
-    after:absolute
-    after:left-1/2
-    after:bottom-[0.1rem]
-    after:h-[0.2rem]
-    after:w-0
-    after:bg-red-500
-    after:rounded-full
-    after:transition-all
-    after:duration-300
-    hover:after:left-0
-    hover:after:w-full dark:text-gray-300`}
+                  className={`relative pb-1 transition-all text-gray-700 after:content-[''] after:absolute after:left-1/2 after:bottom-[0.1rem] after:h-[0.2rem] after:w-0 after:bg-red-500 after:rounded-full after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full dark:text-gray-300`}
                 >
                   {item.label}
                 </Link>
@@ -88,7 +75,7 @@ const Navbar = () => {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white transition cursor-pointer"
+              className="p-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-800 dark:text-white transition cursor-pointer"
             >
               {theme === "dark" ? (
                 <SunIcon className="w-5 h-5" />
@@ -104,9 +91,9 @@ const Navbar = () => {
             className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
           >
             {isMobileMenuOpen ? (
-              <XMarkIcon className="w-7 h-7 dark:text-white" />
+              <XMarkIcon className="w-7 h-7 dark:text-white cursor-pointer" />
             ) : (
-              <Bars3Icon className="w-7 h-7 dark:text-white" />
+              <Bars3Icon className="w-7 h-7 dark:text-white cursor-pointer" />
             )}
           </button>
         </div>
@@ -130,7 +117,7 @@ const Navbar = () => {
               <Link
                 href="/basantCV.pdf"
                 download
-                className="block py-2 text-primary font-semibold"
+                className="px-4 py-2 rounded-lg shadow hover:opacity-90 transition text-gray-800 bg-gray-400 dark:bg-[#212428]/80 dark:text-gray-300 block"
                 onClick={toggleMobileMenu}
               >
                 Resume
@@ -139,7 +126,7 @@ const Navbar = () => {
               {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
-                className="flex items-center gap-2 py-2 hover:text-primary transition"
+                className="flex items-center gap-2 py-2 hover:text-primary transition cursor-pointer"
               >
                 {theme === "dark" ? (
                   <>

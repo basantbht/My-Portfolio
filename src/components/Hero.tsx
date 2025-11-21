@@ -26,10 +26,12 @@ const Hero = () => {
             </motion.span>
           </h1>
 
-          <div className="flex text-center gap-1">
+         
+            <div className="flex justify-center md:justify-start gap-1">
             <p className="mt-2 text-3xl font-semibold">a Student</p>
             <span className="mt-2 inline-block w-[2.5] h-8 bg-black animate-blink dark:bg-white"></span>
           </div>
+          
 
           <motion.p
             initial={{ y: 20, opacity: 0 }}
@@ -37,9 +39,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="mt-2 text-base md:text-md text-gray-600 dark:text-gray-300 max-w-xl"
           >
-            I'm a passionate Frontend Developer focused on building modern,
-            responsive and user-friendly web applications. I specialize in
-            crafting seamless user experiences with clean, efficient code.
+            I'm a Computer Engineering student with a strong passion for frontend development. I specialize in building modern, responsive, and user-friendly web applications using React.js, Next.js, Tailwind CSS. I also have basic backend experience with Node.js, Express.js, and MongoDB, which helps me understand the full development workflow.
           </motion.p>
 
           {/* Social links */}
@@ -63,7 +63,7 @@ const Hero = () => {
                   icon: FaLinkedin,
                 },
                 {
-                  href: "/",
+                  href: "https://x.com/BasantBhatt94",
                   icon: FaTwitter,
                 },
               ].map(({ href, icon: Icon }, i) => (
