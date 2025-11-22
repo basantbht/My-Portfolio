@@ -88,7 +88,7 @@ const Hero = () => {
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 1.2 }}
-              className="flex justify-center md:justify-start gap-4"
+              className="flex justify-center md:justify-start gap-4 px-5 md:p-0"
             >
               {[
                 FaReact,
