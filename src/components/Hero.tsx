@@ -39,7 +39,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="mt-2 text-base md:text-md text-gray-600 dark:text-gray-300 max-w-xl"
           >
-            I'm a Computer Engineering student with a strong passion for frontend development. I specialize in building modern, responsive, and user-friendly web applications using React.js, Next.js, Tailwind CSS. I also have backend experience with Node.js, Express.js, and MongoDB, which helps me understand the full development workflow.
+            I'm a Computer Engineering student with a strong passion for MERN stack development. I specialize in building modern, responsive, and user-friendly web applications using React.js, Next.js, Tailwind CSS. I also have backend experience with Node.js, Express.js, and MongoDB, which helps me understand the full development workflow.
           </motion.p>
 
           {/* Social links */}
