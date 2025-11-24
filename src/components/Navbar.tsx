@@ -66,7 +66,7 @@ const Navbar = () => {
             <Link
               href="/basantCV.pdf"
               download
-              className="px-4 py-2 rounded-lg shadow hover:opacity-90 transition text-gray-800 bg-gray-400 dark:bg-[#212428]/80 dark:text-gray-300
+              className="px-4 py-2 rounded-lg shadow hover:opacity-90 transition text-gray-800 bg-gray-400 dark:bg-gray-700 dark:text-gray-300
 "
             >
               Resume
