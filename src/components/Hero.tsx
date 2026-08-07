@@ -26,12 +26,12 @@ const Hero = () => {
             </motion.span>
           </h1>
 
-         
+
             <div className="flex justify-center md:justify-start gap-1">
             <p className="mt-2 text-3xl font-semibold">a Student</p>
             <span className="mt-2 inline-block w-[2.5] h-8 bg-black animate-blink dark:bg-white"></span>
           </div>
-          
+
 
           <motion.p
             initial={{ y: 20, opacity: 0 }}
